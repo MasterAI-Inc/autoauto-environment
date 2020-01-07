@@ -32,3 +32,5 @@ alias gc='git commit'
 . /usr/lib/git-core/git-sh-prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
 
+# Include the local bin folder in the PATH.
+export PATH="$PATH:REPLACE_ROOT_DIR/bin"
