@@ -5,7 +5,7 @@ set -e
 cd "$(dirname "$0")"
 
 cp bash/Dotbash_profile ~/.bash_profile
-cp bash/Dotbashrc ~/.bashrc
+cat bash/Dotbashrc | sed "s|REPLACE_ROOT_DIR|$(pwd)|g" > ~/.bashrc
 echo "Bash files installed..."
 
 echo "source $(pwd)/vim/Dotvimrc" > ~/.vimrc
