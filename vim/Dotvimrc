@@ -24,7 +24,7 @@ if has("gui_running")
 else
     colorscheme desert
     " colorscheme zellner
-    set background=light
+    set background=dark
 endif
 
 " Set the leader key for my custom commands.
