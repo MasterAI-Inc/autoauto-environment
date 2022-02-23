@@ -13,3 +13,7 @@ rm -rf ~/.vim
 ln -s "$(pwd)/vim" ~/.vim
 echo 'Vim files installed...'
 
+mkdir -p ~/.config/htop
+cp htoprc ~/.config/htop/htoprc
+echo 'Htop config installed...'
+
